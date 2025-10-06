@@ -11,8 +11,8 @@ public class SimpleBot {
         remindName();
         guessAge();
         count();
-
-        System.out.println("Completed, have a nice day!");
+        test();
+        end();
         scanner.close();
     }
 
@@ -46,5 +46,24 @@ public class SimpleBot {
         for (int i = 0; i <= countNumber; i++) {
             System.out.println(i + "!");
         }
+    }
+    public static void test() {
+        System.out.println("Let's test your programming knowledge.");
+        String question = "Why do we use methods?";
+        System.out.println(question);
+        // Display options
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines.");
+        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. To determine the execution time of a program again.");
+        int answer = scanner.nextInt();
+        while (answer != 2) {
+            System.out.println("Please, try again.");
+            answer = scanner.nextInt();
+        }
+    }
+
+    public static void end(){
+        System.out.println("Congratulations, have a nice day!");
     }
 }
